@@ -9,7 +9,7 @@ class User(AbstractUser):
 
   avatar=models.ImageField(null=True,default="avatar.svg") # depends on Pillow package need install pillow package
   USERNAME_FIELD='email'
-  REQUIRED_FIELDS=[]
+  REQUIRED_FIELDS=['username']
 
 
 
